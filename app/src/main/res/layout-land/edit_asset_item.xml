@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/edit_asset_item_screen"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:forceDarkAllowed="true"
+    tools:context=".MainActivity"
+    tools:targetApi="q">
+
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/app_bar_edit_asset_item_screen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:liftOnScroll="true">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar_edit_asset_item_screen"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/divein_color"
+            android:clickable="true"
+            android:focusable="true"
+            app:buttonGravity="center_vertical"
+            app:layout_scrollFlags="scroll|enterAlways|snap"
+            app:navigationContentDescription="arrow_back"
+            app:navigationIcon="@drawable/arrow_back"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:title="Basic info"
+            app:titleTextAppearance="@style/TextAppearance.AppCompat.Large"
+            app:titleTextColor="#FFFFFF" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="70dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|top"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/edit_asset_name"
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:foregroundGravity="center"
+                android:gravity="center"
+                android:hint="@string/asset_name"
+                android:textColorHint="@color/material_on_background_emphasis_medium"
+                app:boxStrokeColor="@android:color/tertiary_text_light"
+                app:boxStrokeWidth="1dp"
+                app:hintEnabled="true"
+                app:hintTextColor="@color/material_on_background_emphasis_medium"
+                tools:ignore="RtlHardcoded">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="320dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:background="@color/transparent"
+                    android:foregroundGravity="left"
+                    android:gravity="left"
+                    android:imeOptions="actionNext"
+                    android:inputType="textCapSentences|textAutoCorrect"
+                    android:singleLine="true"
+                    android:textAlignment="gravity"
+                    android:textColor="@color/material_on_background_emphasis_medium"
+                    android:textColorHighlight="@color/material_on_background_emphasis_medium"
+                    android:textColorHint="@color/material_on_background_emphasis_medium"
+                    android:textCursorDrawable="@drawable/cursor_drawable"
+                    tools:ignore="TextContrastCheck" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/edit_inventory_number"
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:foregroundGravity="center"
+                android:gravity="center"
+                android:hint="@string/inventory_number"
+                android:textAlignment="textStart"
+                android:textColorHint="@color/material_on_background_emphasis_medium"
+                app:boxStrokeColor="@android:color/tertiary_text_light"
+                app:boxStrokeWidth="1dp"
+                app:helperText="*Unique"
+                app:helperTextEnabled="true"
+                app:hintEnabled="true"
+                app:hintTextColor="@color/material_on_background_emphasis_medium"
+                tools:ignore="RtlCompat,RtlHardcoded">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="320dp"
+                    android:layout_height="wrap_content"
+                    android:background="@color/transparent"
+                    android:imeOptions="actionNext"
+                    android:inputType="textCapSentences|textAutoCorrect"
+                    android:singleLine="true"
+                    android:textAlignment="gravity"
+                    android:textColor="@color/material_on_background_emphasis_medium"
+                    android:textColorHighlight="@color/material_on_background_emphasis_medium"
+                    android:textColorHint="@color/material_on_background_emphasis_medium"
+                    android:textCursorDrawable="@drawable/cursor_drawable"
+                    tools:ignore="RtlCompat,RtlHardcoded,TextContrastCheck" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/status"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginTop="20dp"
+                android:foregroundGravity="left|center"
+                android:gravity="center|left"
+                android:hint="@string/status"
+                android:textColorHint="@color/material_on_background_emphasis_medium"
+                app:helperText="*Uneditable"
+                app:helperTextEnabled="true"
+                app:hintEnabled="true"
+                app:hintTextColor="@color/material_on_background_emphasis_medium"
+                tools:ignore="RtlHardcoded">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:background="@color/transparent"
+                    android:imeOptions="actionNext"
+                    android:inputType="none"
+                    android:singleLine="true"
+                    android:textColor="@color/material_on_background_emphasis_medium"
+                    android:textColorHighlight="@color/material_on_background_emphasis_medium"
+                    android:textColorHint="@color/material_on_background_emphasis_medium"
+                    android:textCursorDrawable="@color/material_on_background_emphasis_medium"
+                    android:visibility="invisible" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/quantity"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginTop="-76.5dp"
+                android:layout_marginBottom="4dp"
+                android:backgroundTint="@color/material_on_background_emphasis_medium"
+                android:foregroundTint="@color/material_on_background_emphasis_medium"
+                android:gravity="end"
+                android:hint="@string/quantity"
+                android:textColorHint="@color/material_on_background_emphasis_medium"
+                app:boxStrokeColor="@android:color/tertiary_text_light"
+                app:boxStrokeWidth="1dp"
+                app:hintEnabled="true"
+                app:hintTextColor="@color/material_on_background_emphasis_medium"
+                tools:ignore="RtlCompat,RtlHardcoded">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@color/transparent"
+                    android:foregroundTint="@color/material_on_background_emphasis_medium"
+                    android:gravity="center"
+                    android:imeOptions="actionNext"
+                    android:inputType="number"
+                    android:singleLine="true"
+                    android:textAlignment="gravity"
+                    android:textColor="@color/material_on_background_emphasis_medium"
+                    android:textColorHighlight="@color/material_on_background_emphasis_medium"
+                    android:textColorHint="@color/material_on_background_emphasis_medium"
+                    android:textCursorDrawable="@drawable/cursor_drawable"
+                    tools:ignore="RtlCompat,RtlHardcoded" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/type_of_asset"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginTop="20dp"
+                android:gravity="end"
+                android:hint="@string/type"
+                android:textColorHint="@color/material_on_background_emphasis_medium"
+                app:helperText="*Uneditable"
+                app:helperTextEnabled="true"
+                app:hintEnabled="true"
+                app:hintTextColor="@color/material_on_background_emphasis_medium"
+                tools:ignore="RtlHardcoded">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:background="@color/transparent"
+                    android:gravity="center"
+                    android:imeOptions="actionNext"
+                    android:inputType="number"
+                    android:singleLine="true"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/material_on_background_emphasis_medium"
+                    android:textColorHighlight="@color/material_on_background_emphasis_medium"
+                    android:textColorHint="@color/material_on_background_emphasis_medium"
+                    android:textCursorDrawable="@color/material_on_background_emphasis_medium"
+                    android:visibility="invisible"
+                    tools:ignore="RtlCompat,RtlHardcoded" />
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

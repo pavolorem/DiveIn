@@ -1,0 +1,12 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:width="360dp"
+    android:height="77dp"
+    android:autoMirrored="true"
+    android:viewportWidth="360"
+    android:viewportHeight="77"
+    tools:ignore="VectorRaster">
+    <path
+        android:fillColor="@color/divein_color"
+        android:pathData="M30,-10L330,-10A30,30 0,0 1,360 20L360,47A30,30 0,0 1,330 77L30,77A30,30 0,0 1,0 47L0,20A30,30 0,0 1,30 -10z" />
+</vector>

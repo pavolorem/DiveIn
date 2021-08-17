@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/home_button"
+        android:enabled="true"
+        android:icon="@drawable/home_logo_asset_bottom"
+        android:title="@string/Home"
+        android:visible="true" />
+
+    <item
+        android:id="@+id/barcode_scan"
+        android:enabled="true"
+        android:icon="@drawable/barcode_scan_logo_bottom"
+        android:title="@string/Scan"
+        android:visible="true" />
+
+
+    <item
+        android:id="@+id/rfid_scan"
+        android:enabled="true"
+        android:icon="@drawable/rfid_logo"
+        android:title="@string/RFID"
+        android:visible="true" />
+
+    <item
+        android:id="@+id/export_button"
+        android:enabled="true"
+        android:icon="@drawable/export_logo"
+        android:title="@string/Export"
+        android:visible="true" />
+
+    <item
+        android:id="@+id/info_button"
+        android:enabled="true"
+        android:icon="@drawable/inventory_info_logo"
+        android:title="@string/Info"
+        android:visible="true" />
+</menu>

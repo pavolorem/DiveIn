@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/change_default_language"
+        android:contentDescription="@string/change_default_language"
+        android:icon="@drawable/change_language_logo"
+        android:title="@string/Language"
+        app:showAsAction="ifRoom">
+
+        <menu>
+
+            <item
+                android:id="@+id/bulgarian_language"
+                android:enabled="true"
+                android:icon="@drawable/flag_bg_login_screen"
+                android:title="@string/bulgary"
+                app:showAsAction="ifRoom" />
+
+            <item
+                android:id="@+id/czech_language"
+                android:enabled="true"
+                android:icon="@drawable/flag_cz_login_screen"
+                android:title="@string/čeština"
+                app:showAsAction="ifRoom" />
+
+            <item
+                android:id="@+id/deutsch_language"
+                android:enabled="true"
+                android:icon="@drawable/flag_de_login_screen"
+                android:title="@string/deutsch"
+                app:showAsAction="ifRoom" />
+
+            <item
+                android:id="@+id/eesti_language"
+                android:enabled="true"
+                android:icon="@drawable/flag_ee_login_screen"
+                android:title="@string/eesti"
+                app:showAsAction="ifRoom" />
+
+            <item
+                android:id="@+id/english_language"
+                android:enabled="true"
+                android:icon="@drawable/flag_uk_login_screen"
+                android:title="@string/english"
+                app:showAsAction="ifRoom" />
+
+            <item
+                android:id="@+id/lithuanian_language"
+                android:enabled="true"
+                android:icon="@drawable/flag_lt_login_screen"
+                android:title="@string/lietuvi"
+                app:showAsAction="ifRoom" />
+
+            <item
+                android:id="@+id/magyar_language"
+                android:enabled="true"
+                android:icon="@drawable/flag_hu_login_screen"
+                android:title="@string/magyar"
+                app:showAsAction="ifRoom" />
+
+            <item
+                android:id="@+id/polski_language"
+                android:enabled="true"
+                android:icon="@drawable/flag_pl_login_screen"
+                android:title="@string/polski"
+                app:showAsAction="ifRoom" />
+
+            <item
+                android:id="@+id/russian_language"
+                android:enabled="true"
+                android:icon="@drawable/flag_ru_login_screen"
+                android:title="@string/russian"
+                app:showAsAction="ifRoom" />
+
+            <item
+                android:id="@+id/slovak_language"
+                android:enabled="true"
+                android:icon="@drawable/flag_sk_login_screen"
+                android:title="@string/slovenčina"
+                app:showAsAction="ifRoom" />
+
+        </menu>
+
+    </item>
+
+</menu>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/home_button"
+        android:enabled="true"
+        android:icon="@drawable/home_logo_asset_bottom"
+        android:title="@string/Home"
+        android:visible="true" />
+
+    <item
+        android:id="@+id/inventory_button"
+        android:enabled="true"
+        android:icon="@drawable/inventory_logo"
+        android:title="@string/Inventory"
+        android:visible="true" />
+
+    <item
+        android:id="@+id/barcode_scan"
+        android:enabled="true"
+        android:icon="@drawable/barcode_scan_logo_bottom"
+        android:title="@string/Scan"
+        android:visible="true" />
+
+    <item
+        android:id="@+id/import_button"
+        android:enabled="true"
+        android:icon="@drawable/import_logo"
+        android:title="@string/Import"
+        android:visible="true" />
+
+    <item
+        android:id="@+id/print_button"
+        android:enabled="true"
+        android:icon="@drawable/print_logo"
+        android:title="@string/Print"
+        android:visible="true" />
+</menu>

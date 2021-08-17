@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/welcome_screen"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <View
+        android:id="@+id/id_rectangle_shape_login_screen"
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:background="@drawable/rectangle_shape_login_screen"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/id_up_screen_rectangle_login_screen"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:background="@drawable/up_screen_rectangle_login_screen"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/divein_logo_view_welcome_screen"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        app:layout_constraintBottom_toBottomOf="@+id/id_rectangle_shape_login_screen"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="@+id/id_rectangle_shape_login_screen"
+        app:layout_constraintTop_toTopOf="@+id/id_rectangle_shape_login_screen" />
+
+    <ImageView
+        android:id="@+id/divein_logo"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:contentDescription="@string/divein_logo_welcome_screen"
+        app:layout_constraintBottom_toBottomOf="@+id/divein_logo_view_welcome_screen"
+        app:layout_constraintEnd_toEndOf="@+id/divein_logo_view_welcome_screen"
+        app:layout_constraintStart_toStartOf="@+id/divein_logo_view_welcome_screen"
+        app:layout_constraintTop_toTopOf="@+id/divein_logo_view_welcome_screen"
+        app:srcCompat="@drawable/welcome_screen_logo" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/id_rectangle_shape_login_screen"
+        app:layout_constraintVertical_bias="0.0">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/account_logo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginTop="10dp"
+                    android:contentDescription="@string/account_logo_welcome_screen"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.005"
+                    app:srcCompat="@drawable/account_logo_welcome_screen" />
+
+                <ImageView
+                    android:id="@+id/asset_info_logo"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/asset_info_logo_v2"
+                    app:layout_constraintBottom_toTopOf="@+id/inventory_logo"
+                    app:layout_constraintEnd_toEndOf="@+id/account_logo"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="@+id/account_logo"
+                    app:layout_constraintTop_toBottomOf="@+id/account_logo"
+                    app:layout_constraintVertical_bias="0.1"
+                    app:srcCompat="@drawable/asset_info_logo_welcome_screen" />
+
+                <TextView
+                    android:id="@+id/welcome_text"
+                    style="@android:style/Widget.TextView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="120dp"
+                    android:layout_marginEnd="21dp"
+                    android:text="@string/welcome_pavol_orem"
+                    android:textColor="?attr/colorPrimary"
+                    android:textSize="18sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/account_logo"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/account_logo"
+                    app:layout_constraintVertical_bias="0.361" />
+
+                <TextView
+                    android:id="@+id/asset_info_text"
+                    style="@android:style/Widget.TextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="105dp"
+                    android:text="@string/asset_info"
+                    android:textColor="?attr/colorPrimary"
+                    app:layout_constraintBottom_toBottomOf="@+id/asset_info_logo"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/asset_info_logo" />
+
+                <ImageView
+                    android:id="@+id/inventory_logo"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/inventory_logo_v2"
+                    app:layout_constraintBottom_toTopOf="@+id/import_data_logo"
+                    app:layout_constraintEnd_toEndOf="@+id/asset_info_logo"
+                    app:layout_constraintStart_toStartOf="@+id/asset_info_logo"
+                    app:layout_constraintTop_toBottomOf="@+id/asset_info_logo"
+                    app:layout_constraintVertical_bias="0.15"
+                    app:srcCompat="@drawable/inventory_logo_welcome_screen" />
+
+                <TextView
+                    android:id="@+id/inventory_text"
+                    style="@android:style/Widget.TextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="105dp"
+                    android:text="@string/inventory"
+                    android:textColor="?attr/colorPrimary"
+                    app:layout_constraintBottom_toBottomOf="@+id/inventory_logo"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/inventory_logo"
+                    app:layout_constraintVertical_bias="0.40" />
+
+                <ImageView
+                    android:id="@+id/import_data_logo"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/import_logo_v2"
+                    app:layout_constraintBottom_toTopOf="@+id/export_logo"
+                    app:layout_constraintEnd_toEndOf="@+id/inventory_logo"
+                    app:layout_constraintStart_toStartOf="@+id/inventory_logo"
+                    app:layout_constraintTop_toBottomOf="@+id/inventory_logo"
+                    app:layout_constraintVertical_bias="0.1"
+                    app:srcCompat="@drawable/import_logo_welcome_screen" />
+
+                <TextView
+                    android:id="@+id/import_text"
+                    style="@android:style/Widget.TextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="105dp"
+                    android:text="@string/import_data"
+                    android:textColor="?attr/colorPrimary"
+                    app:layout_constraintBottom_toBottomOf="@+id/import_data_logo"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/import_data_logo" />
+
+                <ImageView
+                    android:id="@+id/export_logo"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/export_logo_v2"
+                    app:layout_constraintBottom_toTopOf="@+id/settings_logo"
+                    app:layout_constraintEnd_toEndOf="@+id/import_data_logo"
+                    app:layout_constraintStart_toStartOf="@+id/import_data_logo"
+                    app:layout_constraintTop_toBottomOf="@+id/import_data_logo"
+                    app:layout_constraintVertical_bias="0.15"
+                    app:srcCompat="@drawable/export_logo_welcome_screen" />
+
+                <TextView
+                    android:id="@+id/export_text"
+                    style="@android:style/Widget.TextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="105dp"
+                    android:text="@string/export_data"
+                    android:textColor="?attr/colorPrimary"
+                    app:layout_constraintBottom_toBottomOf="@+id/export_logo"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/export_logo" />
+
+                <ImageView
+                    android:id="@+id/settings_logo"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/settings_logo_v2"
+                    app:layout_constraintBottom_toTopOf="@+id/logout_logo"
+                    app:layout_constraintEnd_toEndOf="@+id/export_logo"
+                    app:layout_constraintStart_toStartOf="@+id/export_logo"
+                    app:layout_constraintTop_toBottomOf="@+id/export_logo"
+                    app:layout_constraintVertical_bias="0.1"
+                    app:srcCompat="@drawable/settings_logo_welcome_screen" />
+
+                <TextView
+                    android:id="@+id/settings_text"
+                    style="@android:style/Widget.TextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="105dp"
+                    android:text="@string/settings"
+                    android:textColor="?attr/colorPrimary"
+                    app:layout_constraintBottom_toBottomOf="@+id/settings_logo"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/settings_logo" />
+
+                <ImageView
+                    android:id="@+id/logout_logo"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginBottom="25dp"
+                    android:contentDescription="@string/logout_logo_v2"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="@+id/settings_logo"
+                    app:layout_constraintStart_toStartOf="@+id/settings_logo"
+                    app:layout_constraintTop_toBottomOf="@+id/settings_logo"
+                    app:srcCompat="@drawable/logout_logo_welcome_screen" />
+
+                <TextView
+                    android:id="@+id/logout_text"
+                    style="@android:style/Widget.TextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="105dp"
+                    android:text="@string/logout"
+                    android:textColor="?attr/colorPrimary"
+                    app:layout_constraintBottom_toBottomOf="@+id/logout_logo"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/logout_logo" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/how_to_scan_barcode"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent"
+    android:foreground="@android:color/transparent"
+    tools:context="com.google.mlkit.md.MainML"
+    tools:ignore="UnusedAttribute"
+    tools:targetApi="m">
+
+    <FrameLayout
+        android:id="@+id/how_to_scan_barcode_view"
+        android:layout_width="400dp"
+        android:layout_height="350dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.498">
+
+        <TextView
+            android:id="@+id/scan_barcode_header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|left"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:foregroundGravity="top|left"
+            android:freezesText="true"
+            android:gravity="top|left"
+            android:text="@string/how_to_scan_barcodes"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:fontFamily="sans-serif"
+            tools:ignore="RtlHardcoded" />
+
+        <pl.droidsonroids.gif.GifImageView
+            android:id="@+id/bar_scan_gif_image"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="60dp"
+            android:layout_marginBottom="100dp"
+            android:contentDescription="@string/bar_scan"
+            android:foregroundGravity="top|center"
+            android:src="@drawable/barcode_scan"
+            tools:ignore="MissingConstraints,ImageContrastCheck" />
+
+        <TextView
+            android:id="@+id/barcode_explanation_1"
+            style="@android:style/Widget.TextView.SpinnerItem"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="60dp"
+            android:layout_marginRight="10dp"
+            android:foregroundGravity="bottom|center"
+            android:freezesText="true"
+            android:gravity="bottom|center"
+            android:lines="30"
+            android:scrollbars="none"
+            android:scrollHorizontally="true"
+            android:text="@string/barcode_scanner_lets_you_use_your_phone_s_camera_to_recognize_barcodes_and_qr_codes"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:textColor="#000000"
+            android:textSize="14sp"
+            app:autoSizeTextType="none"
+            tools:ignore="RtlCompat"
+            tools:targetApi="lollipop" />
+
+        <TextView
+            android:id="@+id/barcode_explanation_2"
+            style="@android:style/Widget.TextView.SpinnerItem"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="110dp"
+            android:layout_marginRight="10dp"
+            android:freezesText="true"
+            android:gravity="center|start"
+            android:lines="20"
+            android:scrollbars="none"
+            android:scrollHorizontally="true"
+            android:text="@string/make_sure_the_code_is_fully_within_the_detection_box_that_shows_in_your_camera_view"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:textColor="#000000"
+            android:textSize="14sp"
+            app:autoSizeTextType="none"
+            tools:targetApi="lollipop" />
+    </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
