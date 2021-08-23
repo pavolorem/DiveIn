@@ -1,6 +1,6 @@
 # Introduction
 
-I started learning about Android with Kotlin at 1.February and this is result after 2 months
+I started learning about Android https://www.apress.com/gp/book/9781484259368 with Kotlin at 1.February and this is result after 2 months
 
 Barcode scanning from Google Vision APIs https://developers.google.com/ml-kit
 
