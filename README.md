@@ -28,3 +28,4 @@ Android pipeline for Bitbucket and Azure Devops
 # Test
 
 Working on any android device with Android 5.0 and above
+Username and Password are equal (admin)
